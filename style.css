@@ -17,6 +17,7 @@ section {
     text-align: center;
 }
 
+h1,
 h2 {
     color: #2c3e50;
     margin-bottom: 20px;
@@ -36,11 +37,13 @@ ul {
     padding: 40px;
     margin: 20px auto;
     max-width: 400px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
-    border-radius: 2px 5px 3px 4px; /* Hand-drawn feel */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 2px 5px 3px 4px;
+    /* Hand-drawn feel */
     font-family: 'Rubik', sans-serif;
     color: #777;
     font-size: 1.1em;
     position: relative;
-    transform: rotate(-1deg); /* Slight tilt for organic feel */
+    transform: rotate(-1deg);
+    /* Slight tilt for organic feel */
 }
