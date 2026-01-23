@@ -116,6 +116,26 @@ ul {
     font-weight: 300;
 }
 
+/* Author Section */
+.author-section {
+    padding: 80px 30px 60px;
+    max-width: 680px;
+}
+
+.author-section h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.author-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 1.5em;
+    font-weight: 300;
+}
+
 /* Visual Element - Sketch Placeholder */
 .sketch-box {
     background-color: #fff;
