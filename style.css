@@ -76,6 +76,26 @@ ul {
     margin: 0.8em 0;
 }
 
+/* Target Audience Section */
+.target-audience {
+    padding: 60px 30px;
+    max-width: 750px;
+}
+
+.target-audience h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.target-audience p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 1.5em;
+    font-weight: 300;
+}
+
 /* Visual Element - Sketch Placeholder */
 .sketch-box {
     background-color: #fff;
