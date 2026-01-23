@@ -96,6 +96,26 @@ ul {
     font-weight: 300;
 }
 
+/* Why Section */
+.why-section {
+    padding: 60px 30px;
+    max-width: 650px;
+}
+
+.why-section h2 {
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.why-section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 1.6em;
+    font-weight: 300;
+}
+
 /* Visual Element - Sketch Placeholder */
 .sketch-box {
     background-color: #fff;
