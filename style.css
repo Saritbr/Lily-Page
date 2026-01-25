@@ -19,6 +19,9 @@ section {
 
 .hero {
     padding: 80px 20px 40px;
+    background: linear-gradient(-45deg, #fdfbf7, #fff0f5, #e6e6fa);
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
 }
 
 h1 {
@@ -26,6 +29,8 @@ h1 {
     color: #2c3e50;
     margin-bottom: 15px;
     font-weight: 700;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
 }
 
 h2 {
@@ -41,6 +46,8 @@ h2 {
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out 0.5s forwards;
 }
 
 ul {
@@ -152,4 +159,31 @@ ul {
     position: relative;
     transform: rotate(-1deg);
     /* Slight tilt for organic feel */
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
