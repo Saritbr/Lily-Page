@@ -125,7 +125,20 @@ ul {
 /* Target Audience Section */
 .target-audience {
     padding: 60px 30px;
-    max-width: 750px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.target-audience-text {
+    flex: 1;
+    text-align: center;
+}
+
+.target-audience-image {
+    flex: 0 0 auto;
 }
 
 .target-audience h2 {
@@ -140,6 +153,25 @@ ul {
     color: #4a4a4a;
     margin-bottom: 1.5em;
     font-weight: 300;
+}
+
+.illustration-soft {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile responsive for Target Audience */
+@media (max-width: 768px) {
+    .target-audience {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .illustration-soft {
+        max-width: 280px;
+    }
 }
 
 /* Why Section */
