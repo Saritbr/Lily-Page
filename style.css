@@ -23,6 +23,14 @@ section {
     background-size: 400% 400%;
     animation: gradientFlow 15s ease infinite;
 }
+.hero-butterfly {
+    width: 180px;
+    max-width: 90%;
+    margin-bottom: 20px;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+}
 
 h1 {
     font-size: 2.5rem;
