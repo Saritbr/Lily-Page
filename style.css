@@ -66,7 +66,20 @@ ul {
 /* Intro Section */
 .intro {
     padding: 60px 30px;
-    max-width: 700px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-image {
+    flex: 0 0 auto;
 }
 
 .intro h2 {
@@ -87,6 +100,26 @@ ul {
     display: block;
     content: "";
     margin: 0.8em 0;
+}
+
+.illustration-round {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .illustration-round {
+        max-width: 250px;
+    }
 }
 
 /* Target Audience Section */
@@ -186,4 +219,16 @@ ul {
     50% {}
 
     100% {}
+}
+
+@keyframes gentleFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
