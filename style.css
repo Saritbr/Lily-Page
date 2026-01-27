@@ -19,11 +19,9 @@ section {
 
 .hero {
     padding: 80px 20px 40px;
-    background: linear-gradient(-45deg, #fdfbf7, #fff0f5, #e6e6fa);
-    background-size: 400% 400%;
-    animation: gradientFlow 15s ease infinite;
 }
-.hero-butterfly {
+
+.hero- {
     width: 180px;
     max-width: 90%;
     margin-bottom: 20px;
@@ -183,15 +181,9 @@ ul {
 }
 
 @keyframes gradientFlow {
-    0% {
-        background-position: 0% 50%;
-    }
+    0% {}
 
-    50% {
-        background-position: 100% 50%;
-    }
+    50% {}
 
-    100% {
-        background-position: 0% 50%;
-    }
+    100% {}
 }
