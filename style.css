@@ -449,28 +449,48 @@ ul.flower-list li {
 }
 
 
-/* --- עיצוב מחודש: מי אני (סגנון ממורכז) --- */
+/* --- הגדרת אנימציית ריחוף (מתוקנת!) --- */
+@keyframes gentleFloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    /* עולה למעלה */
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* --- עיצוב האזור הממורכז --- */
 .about-content-centered {
     text-align: center;
-    /* הכל ממורכז */
     max-width: 800px;
     margin: 0 auto;
-    /* ממקם את הכל באמצע המסך */
     padding: 40px 20px;
 }
 
-/* עיצוב איור הפרפר בכותרת */
-.title-butterfly {
-    width: 60px;
-    /* גודל מכובד לאיור (ולא אייקון פיצי) */
+.about-content-centered h2 {
+    margin-bottom: 10px;
+    /* רווח קטן בין הכותרת לפרפר */
+}
+
+/* עיצוב הפרפר המרכזי */
+.central-butterfly {
+    width: 140px;
+    /* גודל יפה ונוכח */
     height: auto;
-    vertical-align: middle;
-    margin-right: 15px;
-    /* רווח מהמילה "מי אני" */
-    transform: rotate(10deg);
-    /* הטיה קטנה לחיים */
+    display: block;
+    /* מאפשר למרכז אותו */
+    margin: 0 auto 30px auto;
+    /* מרכוז + רווח תחתון מהטקסט */
     mix-blend-mode: multiply;
-    /* שקוף */
+
+    /* הפעלת האנימציה המתוקנת */
+    animation: gentleFloat 3s ease-in-out infinite;
 }
 
 /* עיצוב גוף הטקסט */
@@ -485,5 +505,8 @@ ul.flower-list li {
     max-width: 280px;
     border-radius: 20px;
     mix-blend-mode: multiply;
-    margin-top: 20px;
+    margin-top: 10px;
+
+    /* הפעלת אותה אנימציה בקצב קצת אחר */
+    animation: gentleFloat 4s ease-in-out infinite;
 }
