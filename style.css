@@ -229,7 +229,20 @@ ul {
 /* Author Section */
 .author-section {
     padding: 80px 30px 60px;
-    max-width: 680px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.author-text {
+    flex: 1;
+    text-align: center;
+}
+
+.author-image {
+    flex: 0 0 auto;
 }
 
 .author-section h2 {
@@ -240,10 +253,31 @@ ul {
 
 .author-section p {
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #4a4a4a;
     margin-bottom: 1.5em;
     font-weight: 300;
+}
+
+.illustration-hands {
+    max-width: 300px;
+    width: 100%;
+    mix-blend-mode: multiply;
+    animation: gentleFloat 4s ease-in-out infinite;
+    transform: rotate(-2deg);
+}
+
+/* Mobile responsive for Author Section */
+@media (max-width: 768px) {
+    .author-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .illustration-hands {
+        max-width: 250px;
+        order: -1;
+    }
 }
 
 /* Visual Element - Sketch Placeholder */
@@ -294,5 +328,36 @@ ul {
 
     50% {
         transform: translateY(-10px);
+    }
+}
+
+
+/* --- עיצוב לאזור "מי אני" והידיים --- */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.illustration-hands {
+    max-width: 300px;
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+    transform: rotate(-2deg);
+    margin-top: 20px;
+}
+
+/* התאמה לנייד - שהתמונה לא תהיה ענקית */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse;
+        /* טקסט למעלה, תמונה למטה */
+        text-align: center;
     }
 }
