@@ -280,6 +280,49 @@ ul {
     }
 }
 
+/* About Me Section Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    width: 60%;
+    text-align: center;
+}
+
+.about-image {
+    width: 35%;
+}
+
+.about-image .illustration-hands {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Mobile responsive for About Section */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-image .illustration-hands {
+        max-width: 250px;
+    }
+}
+
 /* Visual Element - Sketch Placeholder */
 .sketch-box {
     background-color: #fff;
@@ -328,36 +371,5 @@ ul {
 
     50% {
         transform: translateY(-10px);
-    }
-}
-
-
-/* --- עיצוב לאזור "מי אני" והידיים --- */
-.about-content {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.about-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.illustration-hands {
-    max-width: 300px;
-    border-radius: 20px;
-    mix-blend-mode: multiply;
-    transform: rotate(-2deg);
-    margin-top: 20px;
-}
-
-/* התאמה לנייד - שהתמונה לא תהיה ענקית */
-@media (max-width: 768px) {
-    .about-content {
-        flex-direction: column-reverse;
-        /* טקסט למעלה, תמונה למטה */
-        text-align: center;
     }
 }
