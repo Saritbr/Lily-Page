@@ -447,3 +447,43 @@ ul.flower-list li {
     list-style: none !important;
     /* מעלים כל נקודה או סימן אחר */
 }
+
+
+/* --- עיצוב מחודש: מי אני (סגנון ממורכז) --- */
+.about-content-centered {
+    text-align: center;
+    /* הכל ממורכז */
+    max-width: 800px;
+    margin: 0 auto;
+    /* ממקם את הכל באמצע המסך */
+    padding: 40px 20px;
+}
+
+/* עיצוב איור הפרפר בכותרת */
+.title-butterfly {
+    width: 60px;
+    /* גודל מכובד לאיור (ולא אייקון פיצי) */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 15px;
+    /* רווח מהמילה "מי אני" */
+    transform: rotate(10deg);
+    /* הטיה קטנה לחיים */
+    mix-blend-mode: multiply;
+    /* שקוף */
+}
+
+/* עיצוב גוף הטקסט */
+.about-text-body {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* עיצוב חתימת הידיים למטה */
+.illustration-hands-center {
+    max-width: 280px;
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+    margin-top: 20px;
+}
