@@ -433,3 +433,17 @@ ul.flower-list li {
     mix-blend-mode: multiply;
     /* פקודת הקסם שמעלימה רקע לבן! */
 }
+
+/* --- תיקון סופי: העלמת כפילויות --- */
+.flower-list li::before {
+    content: none !important;
+    /* מבטל את הפרח הכפול שנוצר ב-CSS */
+    display: none !important;
+    /* מוודא שהוא לא תופס מקום */
+    background-image: none !important;
+}
+
+.flower-list li {
+    list-style: none !important;
+    /* מעלים כל נקודה או סימן אחר */
+}
