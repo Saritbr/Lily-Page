@@ -406,21 +406,6 @@ li {
     /* רווח בין השורות */
 }
 
-li::before {
-    content: '';
-    display: inline-block;
-    width: 25px;
-    /* רוחב הפרח */
-    height: 25px;
-    /* גובה הפרח */
-    background-image: url('flower-icon.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 10px;
-    /* רווח בין הפרח לטקסט */
-    vertical-align: middle;
-}
-
 
 /* --- עיצוב רשימת הפרחים --- */
 ul.flower-list {
@@ -439,13 +424,12 @@ ul.flower-list li {
 }
 
 .list-icon {
-    width: 25px;
-    /* גודל הפרח */
+    width: 40px;
+    /* הגדלנו ל-40 כדי שיהיה ברור */
     height: auto;
     margin-left: 15px;
-    /* רווח בין הפרח לטקסט */
     flex-shrink: 0;
-    /* מונע מהפרח להתכווץ */
     margin-top: 5px;
-    /* יישור עדין מול השורה הראשונה */
+    mix-blend-mode: multiply;
+    /* פקודת הקסם שמעלימה רקע לבן! */
 }
