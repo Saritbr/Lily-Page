@@ -420,3 +420,32 @@ li::before {
     /* רווח בין הפרח לטקסט */
     vertical-align: middle;
 }
+
+
+/* --- עיצוב רשימת הפרחים --- */
+ul.flower-list {
+    list-style: none;
+    /* מוריד את הנקודות הישנות */
+    padding: 0;
+}
+
+ul.flower-list li {
+    display: flex;
+    /* מסדר את הפרח והטקסט בשורה */
+    align-items: flex-start;
+    /* מיישר אותם לחלק העליון */
+    margin-bottom: 20px;
+    /* רווח בין נקודה לנקודה */
+}
+
+.list-icon {
+    width: 25px;
+    /* גודל הפרח */
+    height: auto;
+    margin-left: 15px;
+    /* רווח בין הפרח לטקסט */
+    flex-shrink: 0;
+    /* מונע מהפרח להתכווץ */
+    margin-top: 5px;
+    /* יישור עדין מול השורה הראשונה */
+}
