@@ -391,3 +391,32 @@ li::before {
         transform: translateY(-10px);
     }
 }
+
+
+/* --- עיצוב בולטים לפרח --- */
+ul {
+    list-style: none !important;
+    /* מעלים את הנקודות השחורות בכוח */
+    padding-right: 0;
+}
+
+li {
+    position: relative;
+    margin-bottom: 10px;
+    /* רווח בין השורות */
+}
+
+li::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    /* רוחב הפרח */
+    height: 25px;
+    /* גובה הפרח */
+    background-image: url('flower-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    /* רווח בין הפרח לטקסט */
+    vertical-align: middle;
+}
