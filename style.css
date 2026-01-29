@@ -57,10 +57,27 @@ h2 {
 }
 
 ul {
-    list-style-position: inside;
+    list-style: none;
     padding: 0;
     display: inline-block;
     text-align: right;
+}
+
+li {
+    position: relative;
+    padding-right: 0;
+}
+
+li::before {
+    content: "";
+    background-image: url('flower-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 /* Intro Section */
