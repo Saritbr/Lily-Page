@@ -177,7 +177,20 @@ ul {
 /* Why Section */
 .why-section {
     padding: 60px 30px;
-    max-width: 650px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+}
+
+.why-text {
+    flex: 1;
+    text-align: center;
+}
+
+.why-image {
+    flex: 0 0 auto;
 }
 
 .why-section h2 {
@@ -188,10 +201,29 @@ ul {
 
 .why-section p {
     font-size: 1.15rem;
-    line-height: 1.8;
+    line-height: 2.0;
     color: #4a4a4a;
     margin-bottom: 1.6em;
     font-weight: 300;
+}
+
+.illustration-oval {
+    max-width: 320px;
+    width: 100%;
+    mix-blend-mode: multiply;
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+/* Mobile responsive for Why Section */
+@media (max-width: 768px) {
+    .why-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .illustration-oval {
+        max-width: 260px;
+    }
 }
 
 /* Author Section */
