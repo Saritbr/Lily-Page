@@ -234,7 +234,7 @@ li::before {
 /* Mobile responsive for Why Section */
 @media (max-width: 768px) {
     .why-section {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
     }
 
