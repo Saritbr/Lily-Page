@@ -510,3 +510,76 @@ ul.flower-list li {
     /* הפעלת אותה אנימציה בקצב קצת אחר */
     animation: gentleFloat 4s ease-in-out infinite;
 }
+
+/* --- עיצוב הכוכב המפריד (הגרסה המתוקנת) --- */
+.
+
+/* --- שלישיית כוכבים מפרידים --- */
+.section-separator {
+    text-align: center;
+    margin: 50px 0;
+    display: flex;
+    /* מסדר אותם בשורה יפה */
+    justify-content: center;
+    /* ממרכז אותם */
+    align-items: center;
+    /* מיישר אותם לגובה */
+    gap: 15px;
+    /* רווח בין כוכב לכוכב */
+}
+
+.section-separator img {
+    width: 40px;
+    /* גודל בסיסי לכוכבים הצדדיים */
+    height: auto;
+    mix-blend-mode: multiply;
+    opacity: 1;
+    filter: contrast(1.5) brightness(0.9);
+    /* <-- התיקון: מדגיש את הצבעים */
+    animation: gentleFloat 6s ease-in-out infinite;
+}
+
+/* --- עיצוב מיוחד לכוכב האמצעי --- */
+.section-separator img:nth-child(2) {
+    width: 60px;
+    /* הכוכב האמצעי גדול יותר */
+    animation-delay: 1s;
+    /* זז בדיליי קטן אחרי האחרים */
+}
+
+/* --- עיצוב אזור הכותרת (Hero) --- */
+
+.main-title {
+    font-size: 3.5rem;
+    /* הגדלנו את הטקסט משמעותית */
+    color: #2c3e50;
+    /* הצבע הכחול-אפרפר העמוק */
+    margin-bottom: 0px;
+    /* הקטנו את הרווח כדי שהמילים הצבעוניות יהיו קרובות לשם */
+    font-weight: 700;
+}
+
+.colorful-text {
+    font-size: 3rem;
+    /* גודל המילים הצבעוניות */
+    margin-top: 10px;
+    /* רווח קל מהכותרת מעל */
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* המרקרים שלנו - הצבעים לכל מילה */
+.text-green {
+    color: #6bb854;
+    /* ירוק פסטלי */
+}
+
+.text-yellow {
+    color: #e7bc35;
+    /* צהוב חרדלי עדין */
+}
+
+.text-orange {
+    color: #e48334;
+    /* כתום רך */
+}
